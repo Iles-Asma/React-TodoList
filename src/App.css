@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(250, 250, 250);
+}
+
+#root {
+	box-sizing: border-box;
+}
+
+.TodoApp {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	width: 300px;
+	height: auto;
+	margin: 0;
+	background-color: rgb(252, 252, 252);
+	margin: 5px;
+	border-radius: 15px;
+	color: rgb(0, 0, 0);
+
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 5px 3px 15px 1px rgba(0, 0, 0, 0.13);
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+p {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	margin: 10px 0 10px 0px;
+}
+
+label {
+	padding-left: 10px;
+	border-radius: 10px;
+	color: #000000;
+	display: flex;
+	height: 35px;
+	align-items: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: regular;
+	background-color: rgba(161, 161, 161, 0.404);
+
+	margin-bottom: 10px;
+}
+.taskName {
+	margin-right: 10px;
+	align-self: center;
+	margin-bottom: 0px;
+}
+
+.container {
+	width: auto;
+	padding: 0;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	display: flex;
+}
+
+.TodoApp button {
+	background-color: cornflowerblue;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 3px 15px;
+	margin-left: 10px;
+	height: 25px;
+	width: auto;
+	cursor: pointer;
+	outline: none;
+}
+
+.TodoApp button:hover {
+	color: rgb(255, 255, 255);
+}
+
+.TodoApp .button-icon {
+	padding: 0;
+	background-color: rgba(250, 235, 215, 0);
+	color: red;
+	border: none;
+	box-shadow: none;
+	font-family: apple color emoji, segoe ui emoji, noto color emoji, android emoji, emojisymbols, emojione mozilla, twemoji mozilla, segoe ui symbol;
+	font-size: 1rem;
+	margin-left: 10px;
+	font-weight: normal;
+	cursor: pointer;
+	outline: none;
+}
+input {
+	height: 25px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	color: rgb(134, 134, 134);
+	margin-bottom: 10px;
+	padding-left: 10px;
+	background-color: rgba(161, 161, 161, 0.404);
+}
+input:hover {
+	color: rgba(206, 206, 206, 0.795);
+}
+
+input::placeholder:hover {
+	color: rgb(255, 0, 0);
+}
+
+.TodoApp:hover {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	transition: ease-out 0.5s;
+}
+
+.TodoApp .button-icon:hover {
+	text-decoration: none;
+}
+
+.TodoApp ul li .button-icon {
+	font-size: 0.9rem;
+	visibility: hidden;
+}
+
+.TodoApp ul li:hover .button-icon {
+	font-size: 0.9rem;
+	visibility: visible;
+
+	align-self: center;
+}
+
+.button-icon {
+	align-self: flex-end;
+}
+
+.addButton {
+	background-color: rgb(255, 255, 255);
+	height: 60px;
+	width: 300px;
+	border-radius: 20px;
+	border: none;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 5px 3px 15px 1px rgba(0, 0, 0, 0.13);
+	cursor: pointer;
+	outline: none;
+}
+.addButton:hover {
+	background-color: rgb(0, 0, 0);
+	transition: ease-in-out 0.3s;
+	color: rgb(255, 255, 255);
+}
+
+.addButtonContainer {
+	text-align: center;
+	margin: 20px;
+}
+
+.checkBox {
+	margin-top: 10px;
+}
