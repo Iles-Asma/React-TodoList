@@ -2,5 +2,5 @@
 Une Todolist codé en Reactjs pour découvrir le framework.
 # Installation : 
 faire :"npm install" 
-# Pour lancer le projet une fois installé :
-faire : "npm start"
+# Pour lancer le projet après installation :
+faire : "npm start" dans le terminal en étant dans la racine du projet
